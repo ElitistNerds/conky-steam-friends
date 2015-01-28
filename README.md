@@ -23,5 +23,5 @@ Insert the following line into `/etc/conky/conky.conf`:
 <b>Important Note:</b> Remember to change the path above to reflect your `steamfriends.py` location.  I also recommend not changing the `execi` timer to anything less than `300`. Doing so may poll the Steam servers too frequently resulting in being blocked.
 
 ### Screenshots
-![alt tag](screenshot-1.png)
-![alt tag](screenshot-2.png)
+![alt tag](http://i.imgur.com/jujbg8x.png)
+![alt tag](http://i.imgur.com/7sjASzK.png)
