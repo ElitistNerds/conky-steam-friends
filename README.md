@@ -18,6 +18,7 @@ Example:
 
 ### Conky Setup
 Insert the following line into `/etc/conky/conky.conf`:
+
     `${execi 300 ~/scripts/steamfriends.py}`
     
 <b>Important Note:</b> Remember to change the path above to reflect your `steamfriends.py` location.  I also recommend not changing the `execi` timer to anything less than `300`. Doing so may poll the Steam servers too frequently resulting in being blocked.
