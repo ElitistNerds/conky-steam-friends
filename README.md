@@ -6,4 +6,5 @@ Simple script that grabs your steam friends username and status.  While this scr
 ### Setup
 
 ### Screenshot
-![alt tag](screenshot.png)
+![alt tag](screenshot-1.png)
+![alt tag](screenshot-2.png)
