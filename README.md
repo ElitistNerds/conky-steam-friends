@@ -11,8 +11,7 @@ Simple script that grabs your steam friends username and status.  While this scr
 ### Script Setup
 Modify variable `steamid` in `steamfriends.py` to reflect your Steam ID.  
 
-Example:
-    `steamid = "12345678901234567"`
+Example: `steamid = "12345678901234567"`
     
 <b>Important Note:</b> This has to be your Steam ID not your Steam Username.
 
