@@ -45,9 +45,27 @@ If you want Conky to startup automatically on boot you can follow the instructio
 [Guide to Starting Conky on Boot](https://help.ubuntu.com/community/SettingUpConky#Set_Conky_To_Start_At_Boot)
 
 ### Script Setup
-Modify variable `steamid` in `steamfriends.py` to reflect your Steam ID.  
+Download the `steamfriends.py` script and place it in you home directory in a new folder called `scripts`.
 
-Example: `steamid = "12345678901234567"`
+Make sure the script has execute permissions with the following command:
+
+`chmod u+x steamfriends.py`
+
+At this point your file/folder structure should look like the following:
+
+`/home/[username]/scripts/steamfriends.py`
+
+Next you will need to find out what your Steam ID is.  To do this, open up you Steam client and go to your profile page.  Right click on the screen and click 'Copy Page URL'.  Paste the URL in a text editor and you should get something like this:
+
+`http://steamcommunity.com/profiles/12345678901234567/home`
+
+Every Steam account has a different Steam ID.  From the example above the Steam ID would be: `12345678901234567`.  Yours will obviously be different.
+
+Now that you have your Steam ID you will need to modify the variable `steamid` in `steamfriends.py`. 
+
+Example:
+
+`steamid = "12345678901234567"`
     
 <b>Important Note:</b> This has to be your Steam ID not your Steam Username.
 
