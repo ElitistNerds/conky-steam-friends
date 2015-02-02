@@ -12,7 +12,7 @@ You can check to see if Python 3 is installed on your system by running the foll
 
 `which python3`
 
-If Python 3 is installed the above command will return your Python 3 path, such as `/usr/bin/python3`.
+If Python 3 is installed, the above command will return your Python 3 path.  Such as: `/usr/bin/python3`
 
 If nothing is returned then you will need to install Python 3.  Below are the commands needed to install Python 3.
 
@@ -76,7 +76,7 @@ This should return a list of all your Steam friends and their current status.
 ### Conky Setup (Optional)
 <b>Note:</b> This step is only needed if you intend to use `steamfriends.py` with Conky.
 
-Insert the following line at the bottom of `/etc/conky/conky.conf`:
+Insert the following lines at the bottom of `/etc/conky/conky.conf`:
 
 `Steam Friends`
 
@@ -86,16 +86,19 @@ Insert the following line at the bottom of `/etc/conky/conky.conf`:
     
 <b>Important Note:</b> Remember to change the path above to reflect your `steamfriends.py` location.  I also recommend not changing the `execi` timer to anything less than `300`. Doing so may poll the Steam servers too frequently resulting in being blocked.
 
-Depending on how large your friends list is you may also have to change/add the following line into the top of your `conky.cong`:
+Depending on how large your friends list is you may also have to change/add the following line into the top of your `/etc/conky/conky.conf`:
 
 `text_buffer_size 4096`
 
-You can adjust your buffer size as needed.  After making these changes it is recommended that you restart Conky, you can restart Conky with the following commands:
+You can adjust your buffer size as needed.
+
+After making these changes it is recommended that you restart Conky.  Conky can be restarted with the following commands:
 
 `killall conky`
 
 `conky &`
 
 ### Screenshots
+By default, Conky is fairly ugly.  Fill free to experiment with your `conky.conf` file to make it look nicer.  Below is an example of just that.
 ![alt tag](http://i.imgur.com/jujbg8x.png)
 ![alt tag](http://i.imgur.com/7sjASzK.png)
