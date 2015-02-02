@@ -66,15 +66,35 @@ Now that you have your Steam ID you will need to modify the variable `steamid` i
 Example:
 
 `steamid = "12345678901234567"`
+
+Save your changes to `steamfriends.py` and the script is now ready.  You can test out the script by running the following command:
+
+`/home/[username]/scripts/steamfriends.py`
+
+This should return a list of all your Steam friends and their current status.
     
-<b>Important Note:</b> This has to be your Steam ID not your Steam Username.
+### Conky Setup (Optional)
+<b>Note:</b> This step is only needed if you intend to use `steamfriends.py` with Conky.
 
-### Conky Setup
-Insert the following line into `/etc/conky/conky.conf`:
+Insert the following line at the bottom of `/etc/conky/conky.conf`:
 
-    ${execi 300 ~/scripts/steamfriends.py}
+`Steam Friends`
+
+`$hr`
+
+`${execi 300 ~/scripts/steamfriends.py}`
     
 <b>Important Note:</b> Remember to change the path above to reflect your `steamfriends.py` location.  I also recommend not changing the `execi` timer to anything less than `300`. Doing so may poll the Steam servers too frequently resulting in being blocked.
+
+Depending on how large your friends list is you may also have to change/add the following line into the top of your `conky.cong`:
+
+`text_buffer_size 4096`
+
+You can adjust your buffer size as needed.  After making these changes it is recommended that you restart Conky, you can restart Conky with the following commands:
+
+`killall conky`
+
+`conky &`
 
 ### Screenshots
 ![alt tag](http://i.imgur.com/jujbg8x.png)
