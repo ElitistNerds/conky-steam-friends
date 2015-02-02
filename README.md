@@ -38,7 +38,11 @@ If you don't already have Conky installed, you can install it by running the fol
 
 Once you are done installing Conky you can run Conky with the following command:
 
-`conky &` 
+`conky &`
+
+If you want Conky to startup automatically on boot you can follow the instructions from the link below.
+
+[Guide to Starting Conky on Boot](https://help.ubuntu.com/community/SettingUpConky#Set_Conky_To_Start_At_Boot)
 
 ### Script Setup
 Modify variable `steamid` in `steamfriends.py` to reflect your Steam ID.  
