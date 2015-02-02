@@ -5,10 +5,10 @@ Simple script that grabs your steam friends username and status.  While this scr
 
 
 ### Prerequisites
-Note: The following instructions are written for Ubuntu systems.  Commands will vary based off of which distribution you are using.
+<b>Note:</b> The following instructions are written for Ubuntu systems.  Commands may vary based off of which distribution you are using.
 
 #### 1. Python 3
-You can check to see if Python 3 is installed on your system by typing the following command:
+You can check to see if Python 3 is installed on your system by running the following command:
 
 `which python3`
 
@@ -21,9 +21,24 @@ If nothing is returned then you will need to install Python 3.  Below are the co
 `sudo apt-get install python3`
 
 #### 2. Beautiful Soup 4
+Beautiful Soup 4 for Python 3 is needed for the script to run correctly.  Below are the commands needed to install Beautiful Soup 4.
 
+`sudo apt-get update`
 
-#### 3. Conky
+`sudo apt-get install python3-bs4`
+
+#### 3. Conky (Optional)
+<b>Note:</b> This step is only needed if you intend to use `steamfriends.py` with Conky.
+
+If you don't already have Conky installed, you can install it by running the following commands:
+
+`sudo apt-get update`
+
+`sudo apt-get install conky`
+
+Once you are done installing Conky you can run Conky with the following command:
+
+`conky &` 
 
 ### Script Setup
 Modify variable `steamid` in `steamfriends.py` to reflect your Steam ID.  
